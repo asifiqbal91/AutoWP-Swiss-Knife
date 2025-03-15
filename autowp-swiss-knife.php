@@ -84,3 +84,32 @@ function json_basic_auth_error($error) {
 	return $wp_json_basic_auth_error;
 }
 add_filter('rest_authentication_errors', 'json_basic_auth_error');
+
+
+function custom_get_wp_option( $request ) {
+    $option_name = $request->get_param('option_name');
+
+    if ( empty( $option_name ) ) {
+        return new WP_Error( 'no_option', 'Option name is required', array( 'status' => 400 ) );
+    }
+
+    $option_value = get_option( $option_name );
+
+    if ( $option_value === false ) {
+        return new WP_Error( 'invalid_option', 'Option not found', array( 'status' => 404 ) );
+    }
+
+    return rest_ensure_response( array( 'option_name' => $option_name, 'option_value' => $option_value ) );
+}
+
+function custom_register_options_api() {
+    register_rest_route( 'custom/v1', '/option/', array(
+        'methods'  => 'GET',
+        'callback' => 'custom_get_wp_option',
+        'permission_callback' => function () {
+            return current_user_can( 'manage_options' ); // Restrict to admins
+        }
+    ));
+}
+
+add_action( 'rest_api_init', 'custom_register_options_api' );
