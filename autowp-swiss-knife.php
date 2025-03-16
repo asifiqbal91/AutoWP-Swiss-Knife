@@ -86,28 +86,32 @@ function json_basic_auth_error($error) {
 add_filter('rest_authentication_errors', 'json_basic_auth_error');
 
 
-function custom_get_wp_option( $request ) {
-    $option_name = $request->get_param('option_name');
+function update_color_palette( $request ) {
+	$color_palette = $request->get_params();
 
-    if ( empty( $option_name ) ) {
-        return new WP_Error( 'no_option', 'Option name is required', array( 'status' => 400 ) );
+	if ( empty( $color_palette ) ) {
+        return new WP_Error( 'no_color_palette', 'A color palette is required.', array( 'status' => 400 ) );
     }
 
-    $option_value = get_option( $option_name );
+	$color_palettes = get_option( 'astra-color-palettes' );
+	$color_palettes['currentPalette'] = 'palette_1';
+	$color_palettes['palettes']['palette_1'] = $color_palette;
 
-    if ( $option_value === false ) {
-        return new WP_Error( 'invalid_option', 'Option not found', array( 'status' => 404 ) );
-    }
+	update_option( 'astra-color-palettes', $color_palettes );
 
-    return rest_ensure_response( array( 'option_name' => $option_name, 'option_value' => $option_value ) );
+	$astra_settings = get_option( 'astra-settings' );
+	$astra_settings['global-color-palette']['palette'] = $color_palette;
+	update_option( 'astra-settings', $astra_settings );
+
+	return rest_ensure_response( [ 'message' => 'Color palette updated successfully.' ] );
 }
 
 function custom_register_options_api() {
-    register_rest_route( 'custom/v1', '/option/', array(
-        'methods'  => 'GET',
-        'callback' => 'custom_get_wp_option',
+    register_rest_route( 'custom/v1', '/autowp/color-palette/update', array(
+        'methods'  => 'POST',
+        'callback' => 'update_color_palette',
         'permission_callback' => function () {
-            return current_user_can( 'manage_options' ); // Restrict to admins
+            return current_user_can( 'manage_options' );
         }
     ));
 }
