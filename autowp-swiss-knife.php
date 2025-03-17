@@ -86,30 +86,36 @@ function json_basic_auth_error($error) {
 add_filter('rest_authentication_errors', 'json_basic_auth_error');
 
 
-function update_color_palette( $request ) {
-	$color_palette = $request->get_params();
+function update_theme_astra( $request ) {
+	$parameters = $request->get_params();
 
-	if ( empty( $color_palette ) ) {
+	if ( empty( $parameters['colorPalette'] ) ) {
         return new WP_Error( 'no_color_palette', 'A color palette is required.', array( 'status' => 400 ) );
+    }
+
+	if ( empty( $parameters['fonts'] ) ) {
+        return new WP_Error( 'no_font_family', 'A font family is required.', array( 'status' => 400 ) );
     }
 
 	$color_palettes = get_option( 'astra-color-palettes' );
 	$color_palettes['currentPalette'] = 'palette_1';
-	$color_palettes['palettes']['palette_1'] = $color_palette;
+	$color_palettes['palettes']['palette_1'] = $parameters['colorPalette'];
 
 	update_option( 'astra-color-palettes', $color_palettes );
 
 	$astra_settings = get_option( 'astra-settings' );
-	$astra_settings['global-color-palette']['palette'] = $color_palette;
+	$astra_settings['global-color-palette']['palette'] = $parameters['colorPalette'];
+	$astra_settings['body-font-family'] = $parameters['fonts']['body'];
+	$astra_settings['headings-font-family'] = $parameters['fonts']['heading'];
 	update_option( 'astra-settings', $astra_settings );
 
-	return rest_ensure_response( [ 'message' => 'Color palette updated successfully.' ] );
+	return rest_ensure_response( [ 'message' => 'The theme has been updated successfully.' ] );
 }
 
 function custom_register_options_api() {
-    register_rest_route( 'custom/v1', '/autowp/color-palette/update', array(
+    register_rest_route( 'custom/v1', '/autowp/theme/astra/update', array(
         'methods'  => 'POST',
-        'callback' => 'update_color_palette',
+        'callback' => 'update_theme_astra',
         'permission_callback' => function () {
             return current_user_can( 'manage_options' );
         }
