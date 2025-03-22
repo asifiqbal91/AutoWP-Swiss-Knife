@@ -107,6 +107,7 @@ function update_theme_astra( $request ) {
 	$astra_settings['global-color-palette']['palette'] = $parameters['colorPalette'];
 	$astra_settings['body-font-family'] = $parameters['fonts']['body'];
 	$astra_settings['headings-font-family'] = $parameters['fonts']['heading'];
+	$astra_settings['footer-copyright-editor'] = 'Copyright [copyright] [current_year] [site_title] | Powered by [site_title]';
 	update_option( 'astra-settings', $astra_settings );
 
 	return rest_ensure_response( [ 'message' => 'The theme has been updated successfully.' ] );
