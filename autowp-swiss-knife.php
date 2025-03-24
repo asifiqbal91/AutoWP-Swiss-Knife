@@ -113,10 +113,29 @@ function update_theme_astra( $request ) {
 	return rest_ensure_response( [ 'message' => 'The theme has been updated successfully.' ] );
 }
 
+function update_plugin_rank_math( $request ) {
+	$parameters = $request->get_params();
+
+	update_option( 'rank-math-options-general', $parameters['general'] );
+	update_option( 'ranrank-math-options-titles', $parameters['titles'] );
+	update_option( 'rank-math-options-sitemap', $parameters['sitemap'] );
+	update_option( 'rank-math-options-instant-indexing', $parameters['instantIndexing'] );
+
+	return rest_ensure_response( [ 'message' => 'Rank Math plugin has been updated successfully.' ] );
+}
+
 function custom_register_options_api() {
     register_rest_route( 'custom/v1', '/autowp/theme/astra/update', array(
         'methods'  => 'POST',
         'callback' => 'update_theme_astra',
+        'permission_callback' => function () {
+            return current_user_can( 'manage_options' );
+        }
+    ));
+
+    register_rest_route( 'custom/v1', '/autowp/plugin/rank-math/update', array(
+        'methods'  => 'POST',
+        'callback' => 'update_plugin_rank_math',
         'permission_callback' => function () {
             return current_user_can( 'manage_options' );
         }
