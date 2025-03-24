@@ -123,7 +123,7 @@ function update_plugin_rank_math( $request ) {
 
 	update_option( 'rank_math_registration_skip', '1', 'auto' );
 	update_option( 'rank_math_review_posts_converted', '1', 'auto' );
-	update_option( 'rank_math_wizard_completed', '1', 'auto' );
+	update_option( 'rank_math_wizard_completed', '1', 'off' );
 	update_option( 'rank_math_is_configured', '1', 'off' );
 
 	return rest_ensure_response( [ 'message' => 'Rank Math plugin has been updated successfully.' ] );
