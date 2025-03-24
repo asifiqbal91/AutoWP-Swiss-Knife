@@ -116,10 +116,15 @@ function update_theme_astra( $request ) {
 function update_plugin_rank_math( $request ) {
 	$parameters = $request->get_params();
 
-	update_option( 'rank-math-options-general', $parameters['general'] );
-	update_option( 'ranrank-math-options-titles', $parameters['titles'] );
-	update_option( 'rank-math-options-sitemap', $parameters['sitemap'] );
-	update_option( 'rank-math-options-instant-indexing', $parameters['instantIndexing'] );
+	update_option( 'rank-math-options-general', $parameters['general'], 'on' );
+	update_option( 'ranrank-math-options-titles', $parameters['titles'], 'on' );
+	update_option( 'rank-math-options-sitemap', $parameters['sitemap'], 'auto' );
+	update_option( 'rank-math-options-instant-indexing', $parameters['instantIndexing'], 'auto' );
+
+	update_option( 'rank_math_registration_skip', '1', 'auto' );
+	update_option( 'rank_math_review_posts_converted', '1', 'auto' );
+	update_option( 'rank_math_wizard_completed', '1', 'auto' );
+	update_option( 'rank_math_is_configured', '1', 'off' );
 
 	return rest_ensure_response( [ 'message' => 'Rank Math plugin has been updated successfully.' ] );
 }
