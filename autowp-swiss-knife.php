@@ -172,3 +172,12 @@ function expose_rank_math_meta_to_rest_api() {
     }
 }
 add_action('init', 'expose_rank_math_meta_to_rest_api');
+
+function wp_remove_version() {
+	return '';
+}
+
+add_filter('the_generator', 'wp_remove_version');
+remove_action('wp_head', 'wp_generator');
+
+add_filter( 'xmlrpc_enabled', '__return_false' );
