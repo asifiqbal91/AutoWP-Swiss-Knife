@@ -143,3 +143,27 @@ function custom_register_options_api() {
 }
 
 add_action( 'rest_api_init', 'custom_register_options_api' );
+
+function expose_rank_math_meta_to_rest_api() {
+    $rank_math_meta_keys = [
+        'rank_math_title',
+        'rank_math_description',
+        'rank_math_focus_keyword',
+        'rank_math_secondary_keywords',
+        'rank_math_canonical_url',
+        'rank_math_robots',
+    ];
+
+    foreach ($rank_math_meta_keys as $meta_key) {
+        register_meta('post', $meta_key, [
+            'type'         => 'string',
+            'description'  => 'Rank Math SEO meta data',
+            'single'       => true,
+            'show_in_rest' => true,
+            'auth_callback' => function () {
+                return current_user_can('edit_posts');
+            }
+        ]);
+    }
+}
+add_action('init', 'expose_rank_math_meta_to_rest_api');
