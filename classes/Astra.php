@@ -84,7 +84,7 @@ class Astra {
 		];
 
 		$astra_settings['footer-desktop-items']['primary']['primary_1'] = ['html-1', 'social-icons-1'];
-		$astra_settings['footer-html-1'] = '<h5>About Us</h5>\nQuam quam lacus, amet lorem eu nunc, eget dui libero et faucibus facilisis sed odio suspendisse';
+		$astra_settings['footer-html-1'] = '<h5>About Us</h5>Quam quam lacus, amet lorem eu nunc, eget dui libero et faucibus facilisis sed odio suspendisse';
 		$astra_settings['footer-html-1-alignment'] = [
 			'desktop' => 'left',
 			'tablet' => 'center',
@@ -92,7 +92,7 @@ class Astra {
 		];
 		$astra_settings['footer-social-1']['enable'] = false;
 		$astra_settings['footer-social-1-alignment']['enable'] = [
-			'desktop' => 'right',
+			'desktop' => 'left',
 			'tablet' => 'center',
 			'mobile' => 'center',
 		];
