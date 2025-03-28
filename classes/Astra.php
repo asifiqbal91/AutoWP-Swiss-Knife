@@ -65,8 +65,8 @@ class Astra {
 		$astra_settings['body-font-family'] = $parameters['fonts']['body'];
 		$astra_settings['headings-font-family'] = $parameters['fonts']['heading'];
 
-		$astra_settings['header-desktop-items']['primary']['primary_center'] = ['menu-1'];
-		$astra_settings['header-desktop-items']['primary']['primary_right'] = ['widget-1'];
+		// $astra_settings['header-desktop-items']['primary']['primary_center'] = ['menu-1'];
+		// $astra_settings['header-desktop-items']['primary']['primary_right'] = ['widget-1'];
 
 		// $astra_settings['footer-desktop-items']['popup']['popup_content'] = [];
 		// $astra_settings['footer-desktop-items']['layouts']['primary']['column'] = 4;
@@ -80,7 +80,6 @@ class Astra {
 		// 	'desktop' => '4-equal',
 		// 	'tablet' => '4-equal',
 		// 	'mobile' => 'full',
-		// 	'flag' => false,
 		// ];
 
 		// $astra_settings['footer-desktop-items']['primary']['primary_1'] = ['html-1', 'social-icons-1'];
@@ -91,7 +90,7 @@ class Astra {
 		// 	'mobile' => 'center',
 		// ];
 		// $astra_settings['footer-social-1']['enable'] = false;
-		// $astra_settings['footer-social-1-alignment']['enable'] = [
+		// $astra_settings['footer-social-1-alignment'] = [
 		// 	'desktop' => 'left',
 		// 	'tablet' => 'center',
 		// 	'mobile' => 'center',
@@ -105,7 +104,8 @@ class Astra {
 
 		update_option( 'astra-settings', $astra_settings );
 
-		return rest_ensure_response( [ 'message' => 'The theme has been updated successfully.' ] );
+		return rest_ensure_response( [ $astra_settings ] );
+		// return rest_ensure_response( [ 'message' => 'The theme has been updated successfully.' ] );
 
 	} /* update() */
 
