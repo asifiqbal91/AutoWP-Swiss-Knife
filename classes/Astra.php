@@ -111,9 +111,8 @@ class Astra {
 
 		update_option( 'astra-settings', $astra_settings );
 
-		return rest_ensure_response( [ $astra_settings ] );
-		// return rest_ensure_response( [ 'message' => 'The theme has been updated successfully.' ] );
+		return rest_ensure_response( [ 'message' => 'The theme has been updated successfully.' ] );
 
 	} /* update() */
 
-} /* RankMath() */
+} /* Astra() */
