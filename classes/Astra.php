@@ -53,6 +53,10 @@ class Astra {
 			return new WP_Error( 'no_font_family', 'A font family is required.', array( 'status' => 400 ) );
 		}
 
+		if ( empty( $parameters['phone'] ) ) {
+			return new WP_Error( 'no_phone', 'A phone number is required.', array( 'status' => 400 ) );
+		}
+
 		$color_palettes = get_option( 'astra-color-palettes' );
 		$color_palettes['currentPalette'] = 'palette_1';
 		$color_palettes['palettes']['palette_1'] = $parameters['colorPalette'];
@@ -101,7 +105,7 @@ class Astra {
 			'flag' => true,
 		);
 
-		$astra_settings['header-html-1'] = '<h5><a href="tel:01681193142">01681193142</a></h5>';
+		$astra_settings['header-html-1'] = '<h5><a href="tel:' + $parameters['phone'] + '">' + $parameters['phone'] + '</a></h5>';
 
 		$astra_settings['footer-copyright-editor'] = 'Copyright [copyright] [current_year] [site_title] | Powered by [site_title]';
 
