@@ -105,7 +105,7 @@ class Astra {
 			'flag' => true,
 		);
 
-		$astra_settings['header-html-1'] = '<h5><a href="tel:' + $parameters['phone'] + '">' + $parameters['phone'] + '</a></h5>';
+		$astra_settings['header-html-1'] = '<h5><a href="tel:' . $parameters['phone'] . '">' . $parameters['phone'] . '</a></h5>';
 
 		$astra_settings['footer-copyright-editor'] = 'Copyright [copyright] [current_year] [site_title] | Powered by [site_title]';
 
