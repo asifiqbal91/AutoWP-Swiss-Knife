@@ -126,7 +126,7 @@ class Astra {
 		/* Save updated settings. */
 		update_option( 'astra-settings', $astra_settings );
 
-		/** Set a random font for Logo */
+		/** Set a random font for Logo. */
 		$font_families = ['Almond Script','Altariamiguel','Amro Sans','Andalan','Andasia','Arsenica Trial','Artine','Astratura','AwesomeStarthen','BackeyLonely','Bailies Script','Bakora Personal Use','BAR SADY Variable','Battiyan Script','Bauhaus','Bebas Neue','Belinda Script','Be Natural','Bogart Trial','Buvera','Buvera VF','Chillen','Dimyate','DIN','DIN Condensed','DIN Engschrift','DIN Mittelschrift','DIN Schablonierschrift','DIN Alternate','DIN Pro','Droid Sans','Emak','Fruitiy','Galink','Garet','Garetha','Garnet Capitals','Garnet Script','Giliant Demo','Gilmer','Gilmer Sans','Gravenora','Guthenberg','Guthen Bloots Personal Use','Guthen Jaqueline Demo','Hevernost','Honorveil','Kangge','Kithara','LIEUR PERSONAL USE ONLY','LuciaArditsy','LucindaScript','Magister Script One','Magister Script One Extrude','Magister Script Two','Magister Script Two Extrude','Magistral','Manilla Script','Merona','Millenial','Mokacino','Moodisst','Mooxy','Museo 700','Nordin Slab Outline','Nordin Slab','Nordin Slab Rough','Nordin Slab Stamp','PianoTeacher','Qualy Neue','Rafisqi','Rawclue','Roadster Script','Singolare','Singolare Stencil','Symphonys','TBJGoslap Display','TBJGoslap Text','Un Village','Varoste',];
 		$random_key = array_rand( $font_families );
 		$random_font = $font_families[ $random_key ];
