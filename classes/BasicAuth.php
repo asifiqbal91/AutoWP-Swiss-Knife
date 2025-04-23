@@ -27,10 +27,10 @@ class BasicAuth {
 	private function plugables() {
 
 		/* Handle the basic authentication for API requests. */
-		add_filter('determine_current_user', [ $this, 'handler' ], 20);
+		add_filter( 'determine_current_user', [ $this, 'handler' ], 20 );
 
 		/* Handle the errors that occur during basic authentication. */
-		add_filter('rest_authentication_errors', [ $this, 'error_handler' ]);
+		add_filter( 'rest_authentication_errors', [ $this, 'error_handler' ] );
 
 	} /* plugables() */
 
@@ -48,12 +48,12 @@ class BasicAuth {
 		$wp_json_basic_auth_error = null;
 
 		/* If user is already authenticated, no need to re-authenticate. */
-		if (!empty($user)) {
+		if ( !empty( $user ) ) {
 			return $user;
 		}
 
 		/* If no authentication credentials are provided, return as is (unauthenticated). */
-		if (!isset($_SERVER['PHP_AUTH_USER'])) {
+		if ( !isset( $_SERVER['PHP_AUTH_USER'] ) ) {
 			return $user;
 		}
 
@@ -67,16 +67,16 @@ class BasicAuth {
 		 * Avoid infinite recursion in multisite installations by temporarily
 		 * removing the 'determine_current_user' filter while authenticating.
 		 */
-		remove_filter('determine_current_user', 'json_basic_auth_handler', 20);
+		remove_filter( 'determine_current_user', 'json_basic_auth_handler', 20 );
 
 		/* Attempt to authenticate the user. */
-		$user = wp_authenticate($username, $password);
+		$user = wp_authenticate( $username, $password );
 
 		/* Re-add the filter after authentication attempt. */
-		add_filter('determine_current_user', 'json_basic_auth_handler', 20);
+		add_filter( 'determine_current_user', 'json_basic_auth_handler', 20 );
 
 		/* If authentication fails, capture the error and return null. */
-		if (is_wp_error($user)) {
+		if ( is_wp_error( $user ) ) {
 			$wp_json_basic_auth_error = $user;
 			return null;
 		}
@@ -98,7 +98,7 @@ class BasicAuth {
 	public function error_handler( $error ) {
 
 		/* If there are already authentication errors, return them. */
-		if (!empty($error)) {
+		if ( !empty( $error ) ) {
 			return $error;
 		}
 

@@ -8,7 +8,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit();
 }
 
-if ( ! function_exists('autowp_swiss_knife_autoloader') ) {
+if ( ! function_exists( 'autowp_swiss_knife_autoloader' ) ) {
 
 	/**
 	 * Define the AutoWPSWISSKnife plugin classes autoloader.

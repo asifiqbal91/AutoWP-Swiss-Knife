@@ -26,9 +26,9 @@ class Font {
 	 */
 	private function plugables() {
 
-		add_action('wp_enqueue_scripts', [ $this, 'fonts' ]);
+		add_action( 'wp_enqueue_scripts', [ $this, 'fonts' ] );
 
-		add_action('wp_enqueue_scripts', [ $this, 'inline_styles' ]);
+		add_action( 'wp_enqueue_scripts', [ $this, 'inline_styles' ] );
 
 	} /* plugables() */
 
@@ -37,15 +37,15 @@ class Font {
 
 		wp_enqueue_style(
 			'autowp-swiss-knife-fonts',
-			plugin_dir_url(__FILE__) . '../assets/css/fonts.css'
+			plugin_dir_url( __FILE__ ) . '../assets/css/fonts.css'
 		);
 
 	} /* fonts() */
 
 
 	public function inline_styles() {
-		$get_font_family = get_option('ask_logo_font_family');
-		$get_font_size = get_option('ask_logo_font_size');
+		$get_font_family = get_option( 'ask_logo_font_family' );
+		$get_font_size = get_option( 'ask_logo_font_size' );
 
 		$custom_css = "
 			.site-title a {

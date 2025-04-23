@@ -27,13 +27,13 @@ class Security {
 	private function plugables() {
 
 		/* Remove the WordPress version meta tag from the <head> section. */
-		remove_action('wp_head', 'wp_generator');
+		remove_action( 'wp_head', 'wp_generator' );
 
 		/* Disable XML-RPC to prevent remote connections (which can be a security risk). */
 		add_filter( 'xmlrpc_enabled', '__return_false' );
 
 		/* Filter the generator output to remove version info from RSS feeds, etc. */
-		add_filter('the_generator', [ $this, 'wp_remove_version' ]);
+		add_filter( 'the_generator', [ $this, 'wp_remove_version' ] );
 
 	} /* plugables() */
 

@@ -38,13 +38,17 @@ class Astra {
 	 */
 	public function register_rest_api() {
 
-		register_rest_route( 'custom/v1', '/autowp/theme/astra/update', array(
-			'methods'  => 'POST',
-			'callback' => [ $this, 'update' ],
-			'permission_callback' => function () {
-				return current_user_can( 'manage_options' );
-			}
-		));
+		register_rest_route(
+			'custom/v1',
+			'/autowp/theme/astra/update',
+			array(
+				'methods'  => 'POST',
+				'callback' => [ $this, 'update' ],
+				'permission_callback' => function () {
+					return current_user_can( 'manage_options' );
+				}
+			)
+		);
 
 	} /* register_rest_api() */
 

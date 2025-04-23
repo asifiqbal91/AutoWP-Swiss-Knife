@@ -26,10 +26,10 @@ class RankMath {
 	 */
 	private function plugables() {
 		/* Register the Rank Math SEO meta fields. */
-		add_action('init', [ $this, 'add_meta' ]);
+		add_action( 'init', [ $this, 'add_meta' ] );
 
 		/* Register the custom REST API endpoint for updating Rank Math options. */
-		add_action( 'rest_api_init', [ $this, 'register_rest_api' ]);
+		add_action( 'rest_api_init', [ $this, 'register_rest_api' ] );
 
 	} /* plugables() */
 
@@ -47,15 +47,19 @@ class RankMath {
 		];
 
 		foreach ($rank_math_meta_keys as $meta_key) {
-			register_meta('post', $meta_key, [
-				'type'         => 'string',
-				'description'  => 'Rank Math SEO meta data',
-				'single'       => true,
-				'show_in_rest' => true,
-				'auth_callback' => function () {
-					return current_user_can('edit_posts');
-				}
-			]);
+			register_meta(
+				'post',
+				$meta_key,
+				[
+					'type'         => 'string',
+					'description'  => 'Rank Math SEO meta data',
+					'single'       => true,
+					'show_in_rest' => true,
+					'auth_callback' => function () {
+						return current_user_can( 'edit_posts' );
+					}
+				]
+			);
 		}
 	} /* add_meta() */
 
@@ -63,13 +67,17 @@ class RankMath {
 	 * Register the custom REST API route to update Rank Math settings.
 	 */
 	public function register_rest_api() {
-		register_rest_route( 'custom/v1', '/autowp/plugin/rank-math/update', array(
-			'methods'  => 'POST',
-			'callback' => [ $this, 'update' ],
-			'permission_callback' => function () {
-				return current_user_can( 'manage_options' );
-			}
-		));
+		register_rest_route(
+			'custom/v1',
+			'/autowp/plugin/rank-math/update',
+			array(
+				'methods'  => 'POST',
+				'callback' => [ $this, 'update' ],
+				'permission_callback' => function () {
+					return current_user_can( 'manage_options' );
+				}
+			)
+		);
 	} /* register_rest_api() */
 
 	/**
