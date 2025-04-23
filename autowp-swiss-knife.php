@@ -14,6 +14,8 @@ use AutoWPSWISSKnife\BasicAuth;
 use AutoWPSWISSKnife\Astra;
 use AutoWPSWISSKnife\RankMath;
 use AutoWPSWISSKnife\Security;
+use AutoWPSWISSKnife\Font;
+use AutoWPSWISSKnife\SettingsPage;
 
  /* Exit, if accessed directly. */
 if ( ! defined( 'ABSPATH' ) ) {
@@ -30,3 +32,5 @@ BasicAuth::init();
 Astra::init();
 RankMath::init();
 Security::init();
+Font::init();
+SettingsPage::init();

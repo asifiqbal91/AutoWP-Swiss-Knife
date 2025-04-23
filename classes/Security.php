@@ -8,7 +8,7 @@ use AutoWPSWISSKnife\Traits\Singleton;
 if ( ! defined( 'ABSPATH' ) ) {
 	header( 'Status: 403 Forbidden' );
 	header( 'HTTP/1.1 403 Forbidden' );
-	echo 'Hi there! I\'m just a part of a plugin, not much I can do when called directly.';
+	echo 'Hi there! I\'m just a part of plugin, not much I can do when called directly.';
 	exit();
 }
 

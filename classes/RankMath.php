@@ -30,13 +30,13 @@ class RankMath {
 
 		/* Register the custom REST API endpoint for updating Rank Math options. */
 		add_action( 'rest_api_init', [ $this, 'register_rest_api' ]);
-	}
+
+	} /* plugables() */
 
 	/**
 	 * Register the Rank Math SEO meta fields.
 	 */
 	public function add_meta() {
-
 		$rank_math_meta_keys = [
 			'rank_math_title',
 			'rank_math_description',
@@ -53,28 +53,23 @@ class RankMath {
 				'single'       => true,
 				'show_in_rest' => true,
 				'auth_callback' => function () {
-					/* Only allow users who can edit posts to view/update meta. */
 					return current_user_can('edit_posts');
 				}
 			]);
 		}
-
 	} /* add_meta() */
 
 	/**
-	 * Register a custom REST API route to update Rank Math settings.
+	 * Register the custom REST API route to update Rank Math settings.
 	 */
 	public function register_rest_api() {
-
 		register_rest_route( 'custom/v1', '/autowp/plugin/rank-math/update', array(
 			'methods'  => 'POST',
 			'callback' => [ $this, 'update' ],
 			'permission_callback' => function () {
-				/* Only administrators (or similar) can update settings. */
 				return current_user_can( 'manage_options' );
 			}
 		));
-
 	} /* register_rest_api() */
 
 	/**
@@ -84,12 +79,11 @@ class RankMath {
 	 * @return \WP_REST_Response
 	 */
 	public function update( $request ) {
-
 		$parameters = $request->get_params();
 
 		/* Update the various Rank Math plugin options based on the request parameters. */
 		update_option( 'rank-math-options-general', $parameters['general'], 'on' );
-		update_option( 'ranrank-math-options-titles', $parameters['titles'], 'on' ); // Typo in option name?
+		update_option( 'rank-math-options-titles', $parameters['titles'], 'on' );
 		update_option( 'rank-math-options-sitemap', $parameters['sitemap'], 'auto' );
 		update_option( 'rank-math-options-instant-indexing', $parameters['instantIndexing'], 'auto' );
 
