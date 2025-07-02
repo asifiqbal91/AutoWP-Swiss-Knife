@@ -1,0 +1,1521 @@
+/* Helper function to define fonts */
+@font-face {
+	font-family: 'Almond Script';
+	font-style: normal;
+	font-weight: 400;
+	src: url('fonts/Almond Script.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Altariamiguel';
+	font-style: normal;
+	font-weight: 400;
+	src: url('fonts/AltariamiguelRegular-2vBnl.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Amro Sans';
+	font-style: normal;
+	font-weight: 400;
+	src: url('fonts/Amro Sans.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Amro Sans';
+	font-style: normal;
+	font-weight: 700;
+	src: url('fonts/Amro Sans Bold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Amro Sans';
+	font-style: italic;
+	font-weight: 400;
+	src: url('fonts/Amro Sans Italic.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Andalan';
+	font-style: normal;
+	font-weight: 400;
+	src: url('fonts/AndalanRegular-Free.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Andasia';
+	font-style: normal;
+	font-weight: 400;
+	src: url('fonts/andasia.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Arsenica Trial';
+	font-style: normal;
+	font-weight: 700;
+	src: url('fonts/ArsenicaTrial-Bold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Arsenica Trial';
+	font-style: italic;
+	font-weight: 700;
+	src: url('fonts/ArsenicaTrial-BoldItalic.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Arsenica Trial';
+	font-style: normal;
+	font-weight: 600;
+	src: url('fonts/ArsenicaTrial-Demibold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Arsenica Trial';
+	font-style: italic;
+	font-weight: 600;
+	src: url('fonts/ArsenicaTrial-DemiboldItalic.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Arsenica Trial';
+	font-style: normal;
+	font-weight: 800;
+	src: url('fonts/ArsenicaTrial-Extrabold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Arsenica Trial';
+	font-style: italic;
+	font-weight: 800;
+	src: url('fonts/ArsenicaTrial-ExtraboldItalic.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Arsenica Trial';
+	font-style: italic;
+	font-weight: 400;
+	src: url('fonts/ArsenicaTrial-Italic.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Arsenica Trial';
+	font-style: normal;
+	font-weight: 300;
+	src: url('fonts/ArsenicaTrial-Light.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Arsenica Trial';
+	font-style: italic;
+	font-weight: 300;
+	src: url('fonts/ArsenicaTrial-LightItalic.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Arsenica Trial';
+	font-style: normal;
+	font-weight: 500;
+	src: url('fonts/ArsenicaTrial-Medium.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Arsenica Trial';
+	font-style: italic;
+	font-weight: 500;
+	src: url('fonts/ArsenicaTrial-MediumItalic.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Arsenica Trial';
+	font-style: normal;
+	font-weight: 400;
+	src: url('fonts/ArsenicaTrial-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Arsenica Trial';
+	font-style: normal;
+	font-weight: 100;
+	src: url('fonts/ArsenicaTrial-Thin.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Arsenica Trial';
+	font-style: italic;
+	font-weight: 100;
+	src: url('fonts/ArsenicaTrial-ThinItalic.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Artine';
+	font-style: normal;
+	font-weight: 700;
+	src: url('fonts/ArtineBold-nA4d4.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Artine';
+	font-style: normal;
+	font-weight: 300;
+	src: url('fonts/ArtineLight-1jRMM.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Artine';
+	font-style: normal;
+	font-weight: 400;
+	src: url('fonts/ArtineRegular-R91Ge.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Astratura';
+	font-style: normal;
+	font-weight: 400;
+	src: url('fonts/AstraturaRegular-V4JoV.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'AwesomeStarthen';
+	font-style: normal;
+	font-weight: 400;
+	src: url('fonts/AwesomeStarthen-BF67c5ea28947f2.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'BackeyLonely';
+	font-style: normal;
+	font-weight: 400;
+	src: url('fonts/BackeyLonelyRegular-MAder.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Bailies Script';
+	font-style: normal;
+	font-weight: 400;
+	src: url('fonts/Bailies Script.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Bakora Personal Use';
+	font-style: normal;
+	font-weight: 400;
+	src: url('fonts/BakoraPersonalUse-1j8ZZ.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'BAR SADY Variable';
+	font-style: normal;
+	font-weight: 400;
+	src: url('fonts/BAR_SADY_Variable.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Battiyan Script';
+	font-style: normal;
+	font-weight: 400;
+	src: url('fonts/Battiyan Script.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Bauhaus';
+	font-style: normal;
+	font-weight: 400;
+	src: url('fonts/Bauhaus_.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Bebas Neue';
+	font-style: normal;
+	font-weight: 700;
+	src: url('fonts/BebasNeue Bold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Bebas Neue';
+	font-style: normal;
+	font-weight: 400;
+	src: url('fonts/BebasNeue Book.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Bebas Neue';
+	font-style: normal;
+	font-weight: 300;
+	src: url('fonts/BebasNeue Light.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Bebas Neue';
+	font-style: normal;
+	font-weight: 400;
+	src: url('fonts/BebasNeue Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Bebas Neue';
+	font-style: normal;
+	font-weight: 100;
+	src: url('fonts/BebasNeue Thin.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Belinda Script';
+	font-style: normal;
+	font-weight: 400;
+	src: url('fonts/Belinda Script.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Be Natural';
+	font-style: normal;
+	font-weight: 400;
+	src: url('fonts/Be Natural.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Bogart Trial';
+	font-style: italic;
+	font-weight: 900;
+	src: url('fonts/Bogart-Black-Italic-trial.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Bogart Trial';
+	font-style: normal;
+	font-weight: 900;
+	src: url('fonts/Bogart-Black-trial.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Bogart Trial';
+	font-style: italic;
+	font-weight: 700;
+	src: url('fonts/Bogart-Bold-Italic-trial.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Bogart Trial';
+	font-style: normal;
+	font-weight: 700;
+	src: url('fonts/Bogart-Bold-trial.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Bogart Trial';
+	font-style: italic;
+	font-weight: 800;
+	src: url('fonts/Bogart-Extrabold-Italic-trial.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Bogart Trial';
+	font-style: normal;
+	font-weight: 800;
+	src: url('fonts/Bogart-Extrabold-trial.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Bogart Trial';
+	font-style: italic;
+	font-weight: 200;
+	src: url('fonts/Bogart-Extralight-Italic-trial.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Bogart Trial';
+	font-style: normal;
+	font-weight: 200;
+	src: url('fonts/Bogart-Extralight-trial.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Bogart Trial';
+	font-style: italic;
+	font-weight: 400;
+	src: url('fonts/Bogart-Italic-trial.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Bogart Trial';
+	font-style: italic;
+	font-weight: 300;
+	src: url('fonts/Bogart-Light-Italic-trial.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Bogart Trial';
+	font-style: normal;
+	font-weight: 300;
+	src: url('fonts/Bogart-Light-trial.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Bogart Trial';
+	font-style: italic;
+	font-weight: 500;
+	src: url('fonts/Bogart-Medium-Italic-trial.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Bogart Trial';
+	font-style: normal;
+	font-weight: 500;
+	src: url('fonts/Bogart-Medium-trial.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Bogart Trial';
+	font-style: normal;
+	font-weight: 400;
+	src: url('fonts/Bogart-Regular-trial.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Bogart Trial';
+	font-style: italic;
+	font-weight: 600;
+	src: url('fonts/Bogart-Semibold-Italic-trial.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Bogart Trial';
+	font-style: normal;
+	font-weight: 600;
+	src: url('fonts/Bogart-Semibold-trial.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Bogart Trial';
+	font-style: italic;
+	font-weight: 100;
+	src: url('fonts/Bogart-Thin-Italic-trial.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Bogart Trial';
+	font-style: normal;
+	font-weight: 100;
+	src: url('fonts/Bogart-Thin-trial.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Buvera';
+	font-style: normal;
+	font-weight: 900;
+	src: url('fonts/Buvera-Black.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Buvera';
+	font-style: italic;
+	font-weight: 900;
+	src: url('fonts/Buvera-BlackItalic.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Buvera';
+	font-style: normal;
+	font-weight: 700;
+	src: url('fonts/Buvera-Bold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Buvera';
+	font-style: italic;
+	font-weight: 700;
+	src: url('fonts/Buvera-BoldItalic.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Buvera';
+	font-style: normal;
+	font-weight: 800;
+	src: url('fonts/Buvera-ExtraBold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Buvera';
+	font-style: italic;
+	font-weight: 800;
+	src: url('fonts/Buvera-ExtraBoldItalic.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Buvera';
+	font-style: normal;
+	font-weight: 500;
+	src: url('fonts/Buvera-Medium.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Buvera';
+	font-style: italic;
+	font-weight: 500;
+	src: url('fonts/Buvera-MediumItalic.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Buvera';
+	font-style: italic;
+	font-weight: 400;
+	src: url('fonts/Buvera-RegularItalic.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Buvera';
+	font-style: normal;
+	font-weight: 600;
+	src: url('fonts/Buvera-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Buvera';
+	font-style: italic;
+	font-weight: 600;
+	src: url('fonts/Buvera-SemiBoldItalic.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Buvera VF';
+	font-style: normal;
+	font-weight: 400;
+	src: url('fonts/Buvera-VF.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Chillen';
+	font-style: normal;
+	font-weight: 400;
+	src: url('fonts/chillen.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Dimyate';
+	font-style: normal;
+	font-weight: 400;
+	src: url('fonts/Dimyate-Regular-BF67d7a54d8d6f8.ttf') format('truetype');
+}
+
+/* DIN Family */
+@font-face {
+	font-family: 'DIN';
+	font-style: normal;
+	font-weight: 400;
+	src: url('fonts/DIN.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'DIN';
+	font-style: normal;
+	font-weight: 900;
+	src: url('fonts/DIN-Black.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'DIN';
+	font-style: normal;
+	font-weight: 900;
+	src: url('fonts/DIN Black.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'DIN';
+	font-style: normal;
+	font-weight: 700;
+	src: url('fonts/DIN Bold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'DIN Condensed';
+	font-style: normal;
+	font-weight: 400;
+	src: url('fonts/din-c.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'DIN Engschrift';
+	font-style: normal;
+	font-weight: 400;
+	src: url('fonts/din-engschrift.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'DIN';
+	font-style: normal;
+	font-weight: 300;
+	src: url('fonts/DIN Light.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'DIN';
+	font-style: normal;
+	font-weight: 500;
+	src: url('fonts/DIN Medium.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'DIN Mittelschrift';
+	font-style: normal;
+	font-weight: 400;
+	src: url('fonts/din-mittelschrift.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'DIN Schablonierschrift';
+	font-style: normal;
+	font-weight: 400;
+	src: url('fonts/DIN Schablonierschrift.ttf') format('truetype');
+}
+
+/* DIN Alternate Family */
+@font-face {
+	font-family: 'DIN Alternate';
+	font-style: normal;
+	font-weight: 400;
+	src: url('fonts/DIN Alternate.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'DIN Alternate';
+	font-style: normal;
+	font-weight: 900;
+	src: url('fonts/DIN Alternate Black.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'DIN Alternate';
+	font-style: normal;
+	font-weight: 900;
+	src: url('fonts/DIN BlackAlternate.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'DIN Alternate';
+	font-style: normal;
+	font-weight: 700;
+	src: url('fonts/DIN Alternate Bold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'DIN Alternate';
+	font-style: normal;
+	font-weight: 700;
+	src: url('fonts/DIN BoldAlternate.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'DIN Alternate';
+	font-style: normal;
+	font-weight: 300;
+	src: url('fonts/DIN Alternate Light.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'DIN Alternate';
+	font-style: normal;
+	font-weight: 300;
+	src: url('fonts/DIN LightAlternate.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'DIN Alternate';
+	font-style: normal;
+	font-weight: 500;
+	src: url('fonts/DIN Alternate Medium.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'DIN Alternate';
+	font-style: normal;
+	font-weight: 500;
+	src: url('fonts/DIN MediumAlternate.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'DIN Alternate';
+	font-style: normal;
+	font-weight: 400;
+	src: url('fonts/DIN RegularAlternate.ttf') format('truetype');
+}
+
+/* DIN Pro Family */
+@font-face {
+	font-family: 'DIN Pro';
+	font-style: normal;
+	font-weight: 900;
+	src: url('fonts/DINPro-Black_13933.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'DIN Pro';
+	font-style: normal;
+	font-weight: 300;
+	src: url('fonts/DINPro-Light_13935.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'DIN Pro';
+	font-style: normal;
+	font-weight: 500;
+	src: url('fonts/DINPro-Medium_13936.ttf') format('truetype');
+}
+
+/* Droid Sans Family */
+@font-face {
+	font-family: 'Droid Sans';
+	font-style: normal;
+	font-weight: 400;
+	src: url('fonts/DroidSans.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Droid Sans';
+	font-style: normal;
+	font-weight: 700;
+	src: url('fonts/DroidSans-Bold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Emak';
+	font-style: normal;
+	font-weight: 300;
+	src: url('fonts/EmakLight-ARWyD.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Fruitiy';
+	font-style: normal;
+	font-weight: 400;
+	src: url('fonts/fruitiy.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Galink';
+	font-style: normal;
+	font-weight: 400;
+	src: url('fonts/Galink-BF67cec39f05685.ttf') format('truetype');
+}
+
+/* Garet Family */
+@font-face {
+	font-family: 'Garet';
+	font-style: normal;
+	font-weight: 400;
+	src: url('fonts/Garet-Book.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Garet';
+	font-style: normal;
+	font-weight: 900;
+	src: url('fonts/Garet-Heavy.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Garetha';
+	font-style: normal;
+	font-weight: 400;
+	src: url('fonts/Garetha.ttf') format('truetype');
+}
+
+/* Garnet Family */
+@font-face {
+	font-family: 'Garnet Capitals';
+	font-style: normal;
+	font-weight: 400;
+	src: url('fonts/garnet-capitals-inline.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Garnet Capitals';
+	font-style: normal;
+	font-weight: 100;
+	src: url('fonts/garnet-capitals-thin.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Garnet Script';
+	font-style: normal;
+	font-weight: 400;
+	src: url('fonts/garnet-script-regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Giliant Demo';
+	font-style: normal;
+	font-weight: 400;
+	src: url('fonts/giliant-demo.ttf') format('truetype');
+}
+
+/* Gilmer Family */
+@font-face {
+	font-family: 'Gilmer';
+	font-style: normal;
+	font-weight: 500;
+	src: url('fonts/gilmer-medium.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Gilmer Sans';
+	font-style: normal;
+	font-weight: 300;
+	src: url('fonts/gilmer-sans-light.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Gravenora';
+	font-style: normal;
+	font-weight: 400;
+	src: url('fonts/GravenoraRegular-YqKaL.ttf') format('truetype');
+}
+
+/* Guthen Family */
+@font-face {
+	font-family: 'Guthenberg';
+	font-style: normal;
+	font-weight: 400;
+	src: url('fonts/Guthenberg.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Guthen Bloots Personal Use';
+	font-style: normal;
+	font-weight: 400;
+	src: url('fonts/Guthen Bloots Personal Use.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Guthen Jaqueline Demo';
+	font-style: normal;
+	font-weight: 400;
+	src: url('fonts/Guthen Jaqueline Demo.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Hevernost';
+	font-style: normal;
+	font-weight: 400;
+	src: url('fonts/Hevernost-BF67d3ca45ed25a.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Honorveil';
+	font-style: normal;
+	font-weight: 400;
+	src: url('fonts/HonorveilRegular-1j8EZ.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Kangge';
+	font-style: normal;
+	font-weight: 400;
+	src: url('fonts/Kangge-BF67ce62908aea0.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Kithara';
+	font-style: normal;
+	font-weight: 400;
+	src: url('fonts/Kithara-YqKq4.ttf') format('truetype');
+}
+
+/* LIEUR Family */
+@font-face {
+	font-family: 'LIEUR PERSONAL USE ONLY';
+	font-style: italic;
+	font-weight: 300;
+	src: url('fonts/LIEUR-LightItalic-PERSONAL USE ONLY.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'LIEUR PERSONAL USE ONLY';
+	font-style: normal;
+	font-weight: 300;
+	src: url('fonts/LIEUR-Light-PERSONAL USE ONLY.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'LIEUR PERSONAL USE ONLY';
+	font-style: italic;
+	font-weight: 400;
+	src: url('fonts/LIEUR-RegularItalic-PERSONAL USE ONLY.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'LIEUR PERSONAL USE ONLY';
+	font-style: normal;
+	font-weight: 400;
+	src: url('fonts/LIEUR-Regular-PERSONAL USE ONLY.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'LuciaArditsy';
+	font-style: normal;
+	font-weight: 400;
+	src: url('fonts/LuciaArditsy-nA3XY.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'LucindaScript';
+	font-style: normal;
+	font-weight: 400;
+	src: url('fonts/LucindaScript-lgzGy.ttf') format('truetype');
+}
+
+/* Magister Script Family */
+@font-face {
+	font-family: 'Magister Script One';
+	font-style: normal;
+	font-weight: 400;
+	src: url('fonts/Magister Script One.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Magister Script One Extrude';
+	font-style: normal;
+	font-weight: 400;
+	src: url('fonts/Magister Script One Extrude.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Magister Script Two';
+	font-style: normal;
+	font-weight: 400;
+	src: url('fonts/Magister Script Two.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Magister Script Two Extrude';
+	font-style: normal;
+	font-weight: 400;
+	src: url('fonts/Magister Script Two Extrude.ttf') format('truetype');
+}
+
+/* Magistral Family */
+@font-face {
+	font-family: 'Magistral';
+	font-style: normal;
+	font-weight: 700;
+	src: url('fonts/magistral-bold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Magistral';
+	font-style: normal;
+	font-weight: 400;
+	src: url('fonts/magistral-book.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Magistral';
+	font-style: italic;
+	font-weight: 400;
+	src: url('fonts/magistral-book-italic.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Magistral';
+	font-style: normal;
+	font-weight: 300;
+	src: url('fonts/magistral-light.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Manilla Script';
+	font-style: normal;
+	font-weight: 400;
+	src: url('fonts/Manilla Script.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Merona';
+	font-style: normal;
+	font-weight: 400;
+	src: url('fonts/Merona-BF67d8705e8dab3.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Millenial';
+	font-style: normal;
+	font-weight: 400;
+	src: url('fonts/Millenial-BF657eae0309e60.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Mokacino';
+	font-style: normal;
+	font-weight: 400;
+	src: url('fonts/Mokacino.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Moodisst';
+	font-style: normal;
+	font-weight: 400;
+	src: url('fonts/moodisst.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Mooxy';
+	font-style: normal;
+	font-weight: 400;
+	src: url('fonts/mooxy.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Museo 700';
+	font-style: normal;
+	font-weight: 400;
+	src: url('fonts/Museo700-Regular.ttf') format('truetype');
+}
+
+/* Nordin Slab Family */
+@font-face {
+	font-family: 'Nordin Slab Outline';
+	font-style: normal;
+	font-weight: 400;
+	src: url('fonts/Nordin Slab Outline.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Nordin Slab';
+	font-style: normal;
+	font-weight: 400;
+	src: url('fonts/Nordin Slab Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Nordin Slab Rough';
+	font-style: normal;
+	font-weight: 400;
+	src: url('fonts/Nordin Slab Rough.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Nordin Slab Stamp';
+	font-style: normal;
+	font-weight: 400;
+	src: url('fonts/Nordin Slab Stamp.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'PianoTeacher';
+	font-style: normal;
+	font-weight: 400;
+	src: url('fonts/PianoTeacher.ttf') format('truetype');
+}
+
+/* Qualy Neue Family */
+@font-face {
+	font-family: 'Qualy Neue';
+	font-style: normal;
+	font-weight: 700;
+	src: url('fonts/qualy-neue-bold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Qualy Neue';
+	font-style: normal;
+	font-weight: 300;
+	src: url('fonts/qualy-neue-light.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Qualy Neue';
+	font-style: normal;
+	font-weight: 500;
+	src: url('fonts/qualy-neue-medium.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Qualy Neue';
+	font-style: normal;
+	font-weight: 400;
+	src: url('fonts/qualy-neue-regular.ttf') format('truetype');
+}
+
+/* Rafisqi Family */
+@font-face {
+	font-family: 'Rafisqi';
+	font-style: normal;
+	font-weight: 700;
+	src: url('fonts/Rafisqi Bold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Rafisqi';
+	font-style: italic;
+	font-weight: 400;
+	src: url('fonts/Rafisqi Italic.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Rafisqi';
+	font-style: normal;
+	font-weight: 400;
+	src: url('fonts/Rafisqi Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Rawclue';
+	font-style: normal;
+	font-weight: 400;
+	src: url('fonts/Rawclue-copy-BF67e222a98f0a9.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Roadster Script';
+	font-style: normal;
+	font-weight: 400;
+	src: url('fonts/roadsterscript-gopgq.ttf') format('truetype');
+}
+
+/* Singolare Family */
+@font-face {
+	font-family: 'Singolare';
+	font-style: normal;
+	font-weight: 900;
+	src: url('fonts/singolare-black.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Singolare';
+	font-style: normal;
+	font-weight: 700;
+	src: url('fonts/singolare-bold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Singolare';
+	font-style: normal;
+	font-weight: 300;
+	src: url('fonts/singolare-light.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Singolare';
+	font-style: normal;
+	font-weight: 400;
+	src: url('fonts/singolare-regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Singolare Stencil';
+	font-style: normal;
+	font-weight: 700;
+	src: url('fonts/singolare-stencil-bold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Singolare Stencil';
+	font-style: normal;
+	font-weight: 400;
+	src: url('fonts/singolare-stencil-regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Symphonys';
+	font-style: normal;
+	font-weight: 400;
+	src: url('fonts/symphonys.ttf') format('truetype');
+}
+
+/* TBJGoslap Family - Complex Naming, Grouped under TBJGoslap with weight/style/stretch */
+/* Note: font-stretch might need browser support checks */
+@font-face {
+	font-family: 'TBJGoslap Display';
+	font-style: normal;
+	font-weight: 700;
+	font-stretch: condensed;
+	src: url('fonts/TBJGoslap-DisplayCondBold-BF67be9fc933d52.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'TBJGoslap Display';
+	font-style: normal;
+	font-weight: 800;
+	font-stretch: condensed;
+	src: url('fonts/TBJGoslap-DisplayCondExtBd-BF67be9fca7519e.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'TBJGoslap Display';
+	font-style: normal;
+	font-weight: 200;
+	font-stretch: condensed;
+	src: url('fonts/TBJGoslap-DisplayCondExtLt-BF67be9fcaaa20e.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'TBJGoslap Display';
+	font-style: normal;
+	font-weight: 300;
+	font-stretch: condensed;
+	src: url('fonts/TBJGoslap-DisplayCondLight-BF67be9fca6356b.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'TBJGoslap Display';
+	font-style: normal;
+	font-weight: 500;
+	font-stretch: condensed;
+	src: url('fonts/TBJGoslap-DisplayCondMed-BF67be9fca63910.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'TBJGoslap Display';
+	font-style: normal;
+	font-weight: 400;
+	font-stretch: condensed;
+	src: url('fonts/TBJGoslap-DisplayCondReg-BF67be9fca46ce3.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'TBJGoslap Display';
+	font-style: normal;
+	font-weight: 600;
+	font-stretch: condensed;
+	src: url('fonts/TBJGoslap-DisplayCondSemBd-BF67be9fca3f773.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'TBJGoslap Display';
+	font-style: normal;
+	font-weight: 100;
+	font-stretch: condensed;
+	src: url('fonts/TBJGoslap-DisplayCondThin-BF67be9fc9f3e14.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'TBJGoslap Display';
+	font-style: normal;
+	font-weight: 700;
+	font-stretch: normal;
+	src: url('fonts/TBJGoslap-DisplayNormalBold-BF67be9fcaaccf1.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'TBJGoslap Display';
+	font-style: normal;
+	font-weight: 800;
+	font-stretch: normal;
+	src: url('fonts/TBJGoslap-DisplayNormalExtBd-BF67be9fca9a21b.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'TBJGoslap Display';
+	font-style: normal;
+	font-weight: 200;
+	font-stretch: normal;
+	src: url('fonts/TBJGoslap-DisplayNormalExtLt-BF67be9fc99ce92.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'TBJGoslap Display';
+	font-style: normal;
+	font-weight: 300;
+	font-stretch: normal;
+	src: url('fonts/TBJGoslap-DisplayNormalLight-BF67be9fc97ee07.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'TBJGoslap Display';
+	font-style: normal;
+	font-weight: 500;
+	font-stretch: normal;
+	src: url('fonts/TBJGoslap-DisplayNormalMedium-BF67be9fc96fdfe.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'TBJGoslap Display';
+	font-style: normal;
+	font-weight: 600;
+	font-stretch: normal;
+	src: url('fonts/TBJGoslap-DisplayNormalSemBd-BF67be9fc969681.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'TBJGoslap Display';
+	font-style: normal;
+	font-weight: 100;
+	font-stretch: normal;
+	src: url('fonts/TBJGoslap-DisplayNormalThin-BF67be9fc9e3859.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'TBJGoslap Display';
+	font-style: normal;
+	font-weight: 400;
+	font-stretch: normal;
+	src: url('fonts/TBJGoslap-DisplayNormRegular-BF67be9fc9e568e.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'TBJGoslap Display';
+	font-style: normal;
+	font-weight: 700;
+	font-stretch: semi-condensed;
+	src: url('fonts/TBJGoslap-DisplaySemiCondBold-BF67be9fc98180d.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'TBJGoslap Display';
+	font-style: normal;
+	font-weight: 500;
+	font-stretch: semi-condensed;
+	src: url('fonts/TBJGoslap-DisplaySemiCondMed-BF67be9fc9b0bc1.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'TBJGoslap Display';
+	font-style: normal;
+	font-weight: 400;
+	font-stretch: semi-condensed;
+	src: url('fonts/TBJGoslap-DisplaySemiCondReg-BF67be9fc9e39ac.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'TBJGoslap Display';
+	font-style: normal;
+	font-weight: 100;
+	font-stretch: semi-condensed;
+	src: url('fonts/TBJGoslap-DisplaySemiCondThin-BF67be9fca02ec0.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'TBJGoslap Display';
+	font-style: normal;
+	font-weight: 300;
+	font-stretch: semi-condensed;
+	src: url('fonts/TBJGoslap-DisplaySmCnLt-BF67be9fc9f369d.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'TBJGoslap Display';
+	font-style: normal;
+	font-weight: 600;
+	font-stretch: semi-condensed;
+	src: url('fonts/TBJGoslap-DisplaySmCnSmBd-BF67be9fca0c11f.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'TBJGoslap Display';
+	font-style: normal;
+	font-weight: 800;
+	font-stretch: semi-condensed;
+	src: url('fonts/TBJGoslap-DisplaySmCnXBd-BF67be9fca784e6.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'TBJGoslap Display';
+	font-style: normal;
+	font-weight: 200;
+	font-stretch: semi-condensed;
+	src: url('fonts/TBJGoslap-DisplaySmCnXLt-BF67be9fca23f79.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'TBJGoslap Text';
+	font-style: normal;
+	font-weight: 700;
+	font-stretch: condensed;
+	src: url('fonts/TBJGoslap-TextCondensedBold-BF67be9fca5f53d.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'TBJGoslap Text';
+	font-style: normal;
+	font-weight: 300;
+	font-stretch: condensed;
+	src: url('fonts/TBJGoslap-TextCondensedLight-BF67be9fc9eb012.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'TBJGoslap Text';
+	font-style: normal;
+	font-weight: 500;
+	font-stretch: condensed;
+	src: url('fonts/TBJGoslap-TextCondensedMedium-BF67be9fca8f41b.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'TBJGoslap Text';
+	font-style: normal;
+	font-weight: 100;
+	font-stretch: condensed;
+	src: url('fonts/TBJGoslap-TextCondensedThin-BF67be9fca825a3.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'TBJGoslap Text';
+	font-style: normal;
+	font-weight: 800;
+	font-stretch: condensed;
+	src: url('fonts/TBJGoslap-TextCondExtBd-BF67be9fca84404.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'TBJGoslap Text';
+	font-style: normal;
+	font-weight: 200;
+	font-stretch: condensed;
+	src: url('fonts/TBJGoslap-TextCondExtLt-BF67be9fc9e909f.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'TBJGoslap Text';
+	font-style: normal;
+	font-weight: 400;
+	font-stretch: condensed;
+	src: url('fonts/TBJGoslap-TextCondReg-BF67be9fc97333a.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'TBJGoslap Text';
+	font-style: normal;
+	font-weight: 600;
+	font-stretch: condensed;
+	src: url('fonts/TBJGoslap-TextCondSemBd-BF67be9fc959d1f.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'TBJGoslap Text';
+	font-style: normal;
+	font-weight: 700;
+	font-stretch: normal;
+	src: url('fonts/TBJGoslap-TextNormalBold-BF67be9fcaa5c79.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'TBJGoslap Text';
+	font-style: normal;
+	font-weight: 200;
+	font-stretch: normal;
+	src: url('fonts/TBJGoslap-TextNormalExtLt-BF67be9fca9872e.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'TBJGoslap Text';
+	font-style: normal;
+	font-weight: 800;
+	font-stretch: normal;
+	src: url('fonts/TBJGoslap-TextNormalExtraBold-BF67be9fc943a32.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'TBJGoslap Text';
+	font-style: normal;
+	font-weight: 300;
+	font-stretch: normal;
+	src: url('fonts/TBJGoslap-TextNormalLight-BF67be9fc959020.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'TBJGoslap Text';
+	font-style: normal;
+	font-weight: 500;
+	font-stretch: normal;
+	src: url('fonts/TBJGoslap-TextNormalMedium-BF67be9fc96e465.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'TBJGoslap Text';
+	font-style: normal;
+	font-weight: 400;
+	font-stretch: normal;
+	src: url('fonts/TBJGoslap-TextNormalRegular-BF67be9fca0aa75.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'TBJGoslap Text';
+	font-style: normal;
+	font-weight: 600;
+	font-stretch: normal;
+	src: url('fonts/TBJGoslap-TextNormalSemiBold-BF67be9fc9507cf.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'TBJGoslap Text';
+	font-style: normal;
+	font-weight: 100;
+	font-stretch: normal;
+	src: url('fonts/TBJGoslap-TextNormalThin-BF67be9fc9325cf.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'TBJGoslap Text';
+	font-style: normal;
+	font-weight: 700;
+	font-stretch: semi-condensed;
+	src: url('fonts/TBJGoslap-TextSemiCondBold-BF67be9fc90a90d.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'TBJGoslap Text';
+	font-style: normal;
+	font-weight: 800;
+	font-stretch: semi-condensed;
+	src: url('fonts/TBJGoslap-TextSemiCondExtBd-BF67be9fc96e4a4.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'TBJGoslap Text';
+	font-style: normal;
+	font-weight: 200;
+	font-stretch: semi-condensed;
+	src: url('fonts/TBJGoslap-TextSemiCondExtLt-BF67be9fca106ad.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'TBJGoslap Text';
+	font-style: normal;
+	font-weight: 300;
+	font-stretch: semi-condensed;
+	src: url('fonts/TBJGoslap-TextSemiCondLight-BF67be9fc8e4a01.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'TBJGoslap Text';
+	font-style: normal;
+	font-weight: 500;
+	font-stretch: semi-condensed;
+	src: url('fonts/TBJGoslap-TextSemiCondMed-BF67be9fc9472b8.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'TBJGoslap Text';
+	font-style: normal;
+	font-weight: 400;
+	font-stretch: semi-condensed;
+	src: url('fonts/TBJGoslap-TextSemiCondReg-BF67be9fc8b0497.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'TBJGoslap Text';
+	font-style: normal;
+	font-weight: 600;
+	font-stretch: semi-condensed;
+	src: url('fonts/TBJGoslap-TextSemiCondSemBd-BF67be9fc97867f.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'TBJGoslap Text';
+	font-style: normal;
+	font-weight: 100;
+	font-stretch: semi-condensed;
+	src: url('fonts/TBJGoslap-TextSemiCondThin-BF67be9fc9759cb.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Un Village';
+	font-style: normal;
+	font-weight: 400;
+	src: url('fonts/un village.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Varoste';
+	font-style: normal;
+	font-weight: 400;
+	src: url('fonts/VarosteRegular-nA4MJ.ttf') format('truetype');
+}
